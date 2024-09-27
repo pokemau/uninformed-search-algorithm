@@ -51,7 +51,7 @@ namespace AliacSearchAlgo
             do
             {
 
-                temp = ((Node)n[s]).getNeighbor();
+                temp = ((Node)n[s]).GetNeighbor();
                 ((Node)n[s]).Expanded = true;
                 heuristics = calculate(temp, ((Node)n[s]));
                 double min = -1;

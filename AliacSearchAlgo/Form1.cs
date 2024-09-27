@@ -245,7 +245,7 @@ namespace AliacSearchAlgo
                  g.DrawArc(Pens.White, temp.X, temp.Y, 10, 10, 0, 360);
               
 
-               ArrayList connects = temp.getNeighbor();
+               ArrayList connects = temp.GetNeighbor();
                for (int y = 0; y < connects.Count; y++)
                {
                    Node neighbor = (Node)connects[y];

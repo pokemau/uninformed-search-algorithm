@@ -28,84 +28,7 @@ namespace AISearchSample
             moved = false;
         }
 
-        public bool Moved {
-            set { moved = value; }
-            get { return moved; }
-        }
-        public Node Origin
-        {
-            set { origin = value; }
-            get { return origin; }
-        }
-        public int X
-        {
-            set{x = value;}
-            get{return x;}
-        }
-        public int Y
-        {
-            set{y = value;}
-            get{return y;}
-        }
-        public string Name
-        {
-            get
-            {
-                return this.name;
-            }
-            set
-            {
-                this.name = value;
-            }
-        }
-        public int Value
-        {
-            get
-            {
-                return this.value;
-            }
-            set
-            {
-                this.value = value;
-            }
-        }
-        public bool Expanded
-        {
-            get
-            {
-                return this.expanded;
-            }
-            set
-            {
-                this.expanded = value;
-            }
-        }
-        public bool Goal
-        {
-            get
-            {
-                return this.goal;
-            }
-            set
-            {
-                this.goal = value;
-            }
-        }
-
-        public bool Start
-        {
-            get
-            {
-                return this.start;
-            }
-            set
-            {
-                this.start = value;
-            }
-        }
-
-
-        public ArrayList getNeighbor()
+        public ArrayList GetNeighbor()
         {
             //Object[]noodes=this.neighbors.ToArray();
             return neighbors;
@@ -130,5 +53,52 @@ namespace AISearchSample
                 result= true;
             return result;
         }
+        public bool Moved {
+            set { moved = value; }
+            get { return moved; }
+        }
+        public Node Origin
+        {
+            set { origin = value; }
+            get { return origin; }
+        }
+        public int X
+        {
+            set { x = value; }
+            get { return x; }
+        }
+        public int Y
+        {
+            set { y = value; }
+            get { return y; }
+        }
+        public string Name
+        {
+            get { return this.name; }
+            set { this.name = value; }
+        }
+        public int Value
+        {
+            get { return this.value; }
+            set { this.value = value; }
+        }
+        public bool Expanded
+        {
+            get { return this.expanded; }
+            set { this.expanded = value; }
+        }
+        public bool Goal
+        {
+            get { return this.goal; }
+            set { this.goal = value; }
+        }
+
+        public bool Start
+        {
+            get { return this.start; }
+            set { this.start = value;  }
+        }
+
     }
+
 }

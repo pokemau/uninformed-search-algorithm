@@ -62,7 +62,7 @@ namespace AISearchSample
                 }
 
                 //find connections and push to fringe
-                temp = explorer.getNeighbor();
+                temp = explorer.GetNeighbor();
                 t = temp.ToArray();
                 for (int i = 0; i < t.Length; i++)
                 {
@@ -113,7 +113,7 @@ namespace AISearchSample
                 }
 
                 //find connections and push to fringe
-                temp = explorer.getNeighbor();
+                temp = explorer.GetNeighbor();
                 t = temp.ToArray();
                 for (int i = 0; i < t.Length; i++)
                 {
